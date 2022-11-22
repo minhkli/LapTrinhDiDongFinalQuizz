@@ -48,7 +48,7 @@ public class MainActivity extends AppCompatActivity {
             case R.id.toPlayFragment:
                 navController.navigate(R.id.playFragment);
                 return true;
-            case R.id.toHistoryFragment:
+            case R.id.toHistoryListFragment:
                 //Mo HelpFragment
                 navController.navigate(R.id.historyFragment);
                 return true;

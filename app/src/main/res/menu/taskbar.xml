@@ -8,7 +8,7 @@
         app:showAsAction="never"/>
 
     <item
-        android:id="@+id/toHistoryFragment"
+        android:id="@+id/toHistoryListFragment"
         android:title="History"
         app:showAsAction="never"/>
 </menu>
