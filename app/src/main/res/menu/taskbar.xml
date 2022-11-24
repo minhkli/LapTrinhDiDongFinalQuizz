@@ -3,12 +3,12 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <item
-        android:id="@+id/toPlayFragment"
-        android:title="Play"
+        android:id="@+id/toFeedbackFragment"
+        android:title="Góp ý"
         app:showAsAction="never"/>
 
     <item
-        android:id="@+id/toHistoryListFragment"
-        android:title="History"
+        android:id="@+id/toInformationGameFragment"
+        android:title="Thông tin trò chơi"
         app:showAsAction="never"/>
 </menu>

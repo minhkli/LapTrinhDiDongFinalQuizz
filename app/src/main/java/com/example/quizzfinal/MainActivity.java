@@ -45,12 +45,12 @@ public class MainActivity extends AppCompatActivity {
         //Navigation Component: Navgraph, ContainerView, Controler
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment);
         switch (item.getItemId()) {
-            case R.id.toPlayFragment:
+            case R.id.toFeedbackFragment:
                 navController.navigate(R.id.playFragment);
                 return true;
-            case R.id.toHistoryListFragment:
+            case R.id.toInformationGameFragment:
                 //Mo HelpFragment
-                navController.navigate(R.id.historyFragment);
+                navController.navigate(R.id.informationGameFragment);
                 return true;
         }
         return super.onOptionsItemSelected(item);
