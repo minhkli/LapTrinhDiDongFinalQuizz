@@ -7,29 +7,94 @@
     android:id="@+id/playFragment"
     tools:context=".PlayFragment">
 
-
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="112dp"
-        android:textSize="20sp"
-        android:text="Bạn muốn trả lời lĩnh vực nào?"
+        android:layout_marginTop="36dp"
+        android:gravity="center"
+        android:maxLines="2"
+        android:text="Bạn muốn trả lời câu hỏi ở lĩnh vực nào?"
+        android:textSize="30sp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/recycle_view"
-        android:layout_width="wrap_content"
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/image_geo"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/white"
+        android:drawableRight="@drawable/img_geography"
+        android:gravity="center_vertical"
+        android:text="Địa lý"
+        android:textColor="@color/black"
+        android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView"
-        app:layout_constraintVertical_bias="0.246"
-        tools:context=".PlatformListFragment">
+        app:strokeColor="@color/black"
+        app:strokeWidth="2dp" />
 
-    </androidx.recyclerview.widget.RecyclerView>
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/image_math"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="@color/white"
+        android:drawableRight="@drawable/img_geography"
+        android:gravity="center_vertical"
+        android:text="Toán học"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/image_geo"
+        app:strokeColor="@color/black"
+        app:strokeWidth="2dp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/image_history"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="@color/white"
+        android:drawableRight="@drawable/img_geography"
+        android:gravity="center_vertical"
+        android:text="Lịch sử"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/image_math"
+        app:strokeColor="@color/black"
+        app:strokeWidth="2dp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/image_chem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="@color/white"
+        android:drawableRight="@drawable/img_geography"
+        android:gravity="center_vertical"
+        android:text="Hóa học"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/image_history"
+        app:strokeColor="@color/black"
+        app:strokeWidth="2dp" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
