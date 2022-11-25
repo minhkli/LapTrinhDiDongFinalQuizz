@@ -26,7 +26,7 @@
             android:layout_width="60dp"
             android:layout_height="60dp"
             android:layout_alignParentEnd="true"
-            android:src="@drawable/img_math" />
+            android:src="@drawable/_378413" />
     </RelativeLayout>
 
 </androidx.cardview.widget.CardView>
