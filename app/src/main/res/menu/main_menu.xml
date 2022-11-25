@@ -7,7 +7,7 @@
         android:icon="@drawable/ic_baseline_games_24"/>
 
     <item
-        android:id="@+id/historyFragment"
+        android:id="@+id/levelFragment"
         android:title="History"
         android:icon="@drawable/ic_baseline_list_alt_24"/>
 

@@ -8,7 +8,11 @@
         android:id="@+id/playFragment"
         android:name="com.example.quizzfinal.PlayFragment"
         android:label="fragment_play"
-        tools:layout="@layout/fragment_play" />
+        tools:layout="@layout/fragment_play" >
+        <action
+            android:id="@+id/action_playFragment_to_levelFragment"
+            app:destination="@id/levelFragment" />
+    </fragment>
     <fragment
         android:id="@+id/historyFragment"
         android:name="com.example.quizzfinal.HistoryFragment"
@@ -19,4 +23,9 @@
         android:name="com.example.quizzfinal.InformationGameFragment"
         android:label="fragment_information_game"
         tools:layout="@layout/fragment_information_game" />
+    <fragment
+        android:id="@+id/levelFragment"
+        android:name="com.example.quizzfinal.LevelFragment"
+        android:label="fragment_level"
+        tools:layout="@layout/fragment_level" />
 </navigation>
