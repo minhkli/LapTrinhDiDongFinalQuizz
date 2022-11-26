@@ -27,5 +27,14 @@
         android:id="@+id/levelFragment"
         android:name="com.example.quizzfinal.LevelFragment"
         android:label="fragment_level"
-        tools:layout="@layout/fragment_level" />
+        tools:layout="@layout/fragment_level" >
+        <action
+            android:id="@+id/action_levelFragment_to_questionFragment2"
+            app:destination="@id/questionFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/questionFragment"
+        android:name="com.example.quizzfinal.QuestionFragment"
+        android:label="fragment_question"
+        tools:layout="@layout/fragment_question" />
 </navigation>
