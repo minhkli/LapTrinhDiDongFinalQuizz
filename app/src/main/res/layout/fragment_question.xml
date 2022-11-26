@@ -26,8 +26,9 @@
         android:layout_width="match_parent"
         android:layout_height="105dp"
         android:layout_alignParentEnd="true"
-        android:layout_marginTop="56dp"
+        android:layout_marginTop="92dp"
         android:backgroundTint="@color/white"
+        android:drawableRight="@drawable/correct"
         android:gravity="center_vertical"
         android:text="Đúng"
         android:textColor="@color/black"
@@ -47,6 +48,7 @@
         android:layout_marginTop="52dp"
         android:backgroundTint="@color/white"
         android:gravity="center_vertical"
+        android:drawableRight="@drawable/_6875964_cuteanimated_473"
         android:text="Sai"
         android:textColor="@color/black"
         android:textSize="20sp"
@@ -69,7 +71,7 @@
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button_false"
-        app:layout_constraintVertical_bias="0.514" />
+        app:layout_constraintVertical_bias="0.472" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
