@@ -8,7 +8,7 @@
     tools:context=".QuestionFragment">
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/textQuestion"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="36dp"
@@ -36,7 +36,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/textQuestion"
         app:strokeColor="@color/black"
         app:strokeWidth="2dp" />
 
@@ -60,7 +60,7 @@
         app:strokeWidth="2dp" />
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/textCount"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="TextView"
