@@ -12,6 +12,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.ProgressBar;
 import android.widget.TextView;
 
 import java.io.IOException;
@@ -24,17 +25,13 @@ public class QuestionFragment extends Fragment {
     }
 
     private int count = 0;
-    private Button btnQuestion;
+    private Button btnAnswer1;
+    private Button btnAnswer2;
     private TextView txtQuestion;
+    private ProgressBar progressbar;
 
     private static final String COUNT_KEY = "COUNT_KEY";
 
-    private String getPhrase() {
-        if (count == 0)
-            return " ";
-        else
-            return count + " /5";
-    }
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -53,6 +50,7 @@ public class QuestionFragment extends Fragment {
         super.onViewCreated(view, savedInstanceState);
         txtQuestion = view.findViewById(R.id.textQuestion);
 
+        //Read Question text file
         AssetManager assetManager = getContext().getAssets();
         InputStream is = null;
         OutputStream os ;
@@ -69,5 +67,25 @@ public class QuestionFragment extends Fragment {
             ex.printStackTrace();
         }
         txtQuestion.setText(text);
+
+
+        // Text Count Question
+        btnAnswer1 = view.findViewById(R.id.button_true);
+        btnAnswer2 = view.findViewById(R.id.button_false);
+        progressbar = view.findViewById(R.id.progressBar);
+        btnAnswer1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                int current = progressbar.getProgress();
+                progressbar.setProgress(current + 1);
+            }
+        });
+        btnAnswer2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                int current = progressbar.getProgress();
+                progressbar.setProgress(current + 1);
+            }
+        });
     }
 }
