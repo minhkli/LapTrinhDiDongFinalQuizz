@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:id="@+id/questionFragment"
-    tools:context=".QuestionFragment">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ResultFragment">
 
     <TextView
         android:id="@+id/result"
@@ -22,7 +21,7 @@
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.246" />
+        app:layout_constraintVertical_bias="0.247" />
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/complt"
@@ -36,7 +35,7 @@
         android:textSize="20sp"
         app:layout_constraintBottom_toTopOf="@+id/share_point"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintHorizontal_bias="0.675"
         app:layout_constraintStart_toStartOf="parent"
         app:strokeColor="@color/black"
         app:strokeWidth="2dp" />
@@ -46,14 +45,14 @@
         android:layout_width="300dp"
         android:layout_height="105dp"
         android:layout_alignParentEnd="true"
-        android:layout_marginBottom="276dp"
+        android:layout_marginBottom="256dp"
         android:backgroundTint="@color/white"
         android:text="Chia sẻ thành tích"
         android:textColor="@color/black"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintHorizontal_bias="0.675"
         app:layout_constraintStart_toStartOf="parent"
         app:strokeColor="@color/black"
         app:strokeWidth="2dp" />
