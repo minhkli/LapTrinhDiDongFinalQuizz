@@ -63,7 +63,7 @@ public class QuestionFragment extends Fragment {
                 count = binding.progressBar.getProgress();
                 binding.progressBar.setProgress(count + 1);
                 if (count == 5) {
-                    Navigation.findNavController(view).navigate(R.id.action_questionFragment_to_informationGameFragment);
+                    Navigation.findNavController(view).navigate(R.id.action_questionFragment_to_resultFragment);
                 }
             }
         });
@@ -73,7 +73,7 @@ public class QuestionFragment extends Fragment {
                 count = binding.progressBar.getProgress();
                 binding.progressBar.setProgress(count + 1);
                 if (count == 5) {
-                    Navigation.findNavController(view).navigate(R.id.action_questionFragment_to_informationGameFragment);
+                    Navigation.findNavController(view).navigate(R.id.action_questionFragment_to_resultFragment);
                 }
             }
         });

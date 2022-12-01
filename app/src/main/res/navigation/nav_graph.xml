@@ -38,7 +38,16 @@
         android:label="fragment_question"
         tools:layout="@layout/fragment_question" >
         <action
-            android:id="@+id/action_questionFragment_to_informationGameFragment"
-            app:destination="@id/informationGameFragment" />
+            android:id="@+id/action_questionFragment_to_resultFragment"
+            app:destination="@id/resultFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/resultFragment"
+        android:name="com.example.quizzfinal.ResultFragment"
+        android:label="fragment_result"
+        tools:layout="@layout/fragment_result" >
+        <action
+            android:id="@+id/action_resultFragment_to_playFragment"
+            app:destination="@id/playFragment" />
     </fragment>
 </navigation>
