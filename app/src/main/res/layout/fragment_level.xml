@@ -58,7 +58,7 @@
         app:strokeWidth="2dp" />
 
     <com.google.android.material.button.MaterialButton
-        android:id="@+id/image_hard"
+        android:id="@+id/level_hard"
         android:layout_width="match_parent"
         android:layout_height="105dp"
         android:layout_alignParentEnd="true"

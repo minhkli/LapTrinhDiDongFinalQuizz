@@ -22,77 +22,12 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <com.google.android.material.button.MaterialButton
-        android:id="@+id/image_geo"
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler"
         android:layout_width="match_parent"
-        android:layout_height="105dp"
-        android:layout_alignParentEnd="true"
-        android:layout_marginTop="10dp"
-        android:backgroundTint="@color/white"
-        android:drawableRight="@drawable/img_geography"
-        android:gravity="center_vertical"
-        android:text="Địa lý"
-        android:textColor="@color/black"
-        android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView"
-        app:strokeColor="@color/black"
-        app:strokeWidth="2dp" />
-
-    <com.google.android.material.button.MaterialButton
-        android:id="@+id/image_math"
-        android:layout_width="match_parent"
-        android:layout_height="105dp"
-        android:layout_alignParentEnd="true"
-        android:backgroundTint="@color/white"
-        android:drawableRight="@drawable/_378413"
-        android:gravity="center_vertical"
-        android:text="Toán học"
-        android:textColor="@color/black"
-        android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/image_geo"
-        app:strokeColor="@color/black"
-        app:strokeWidth="2dp" />
-
-    <com.google.android.material.button.MaterialButton
-        android:id="@+id/image_chem"
-        android:layout_width="match_parent"
-        android:layout_height="105dp"
-        android:layout_alignParentEnd="true"
-        android:backgroundTint="@color/white"
-        android:drawableRight="@drawable/img_chem"
-        android:gravity="center_vertical"
-        android:text="HÓA HỌC"
-        android:textColor="@color/black"
-        android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/image_math"
-        app:strokeColor="@color/black"
-        app:strokeWidth="2dp" />
-
-    <com.google.android.material.button.MaterialButton
-        android:id="@+id/image_history"
-        android:layout_width="match_parent"
-        android:layout_height="105dp"
-        android:layout_alignParentEnd="true"
-        android:backgroundTint="@color/white"
-        android:drawableRight="@drawable/img_history"
-        android:gravity="center_vertical"
-        android:text="Lịch Sử"
-        android:textColor="@color/black"
-        android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/image_chem"
-        app:strokeColor="@color/black"
-        app:strokeWidth="2dp" />
+        android:layout_height="400dp"
+        android:layout_marginBottom="64dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_editor_absoluteX="0dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
