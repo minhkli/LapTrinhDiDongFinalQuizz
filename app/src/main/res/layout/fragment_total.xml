@@ -8,70 +8,54 @@
     tools:context=".QuestionFragment">
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/result"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="36dp"
+        android:layout_marginTop="112dp"
         android:gravity="center"
         android:maxLines="2"
+        android:text="Result"
         android:textColor="@color/black"
         android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/complt"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.247" />
 
     <com.google.android.material.button.MaterialButton
-        android:id="@+id/button_true"
-        android:layout_width="match_parent"
+        android:id="@+id/complt"
+        android:layout_width="300dp"
         android:layout_height="105dp"
         android:layout_alignParentEnd="true"
-        android:layout_marginTop="92dp"
+        android:layout_marginBottom="20dp"
         android:backgroundTint="@color/white"
-        android:drawableRight="@drawable/correct"
-        android:gravity="center_vertical"
-        android:text="Đúng"
+        android:text="Hoàn thành"
         android:textColor="@color/black"
         android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/share_point"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.675"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView"
         app:strokeColor="@color/black"
         app:strokeWidth="2dp" />
 
     <com.google.android.material.button.MaterialButton
-        android:id="@+id/button_false"
-        android:layout_width="match_parent"
+        android:id="@+id/share_point"
+        android:layout_width="300dp"
         android:layout_height="105dp"
         android:layout_alignParentEnd="true"
-        android:layout_marginTop="52dp"
+        android:layout_marginBottom="256dp"
         android:backgroundTint="@color/white"
-        android:gravity="center_vertical"
-        android:drawableRight="@drawable/_6875964_cuteanimated_473"
-        android:text="Sai"
-        android:textColor="@color/black"
-        android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button_true"
-        app:strokeColor="@color/black"
-        app:strokeWidth="2dp" />
-
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="TextView"
+        android:text="Chia sẻ thành tích"
         android:textColor="@color/black"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.675"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button_false"
-        app:layout_constraintVertical_bias="0.472" />
-
+        app:strokeColor="@color/black"
+        app:strokeWidth="2dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
