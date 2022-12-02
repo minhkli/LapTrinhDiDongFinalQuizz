@@ -22,6 +22,8 @@ import com.example.quizzfinal.databinding.FragmentQuestionBinding;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
+import java.util.ArrayList;
+import java.util.List;
 
 public class QuestionFragment extends Fragment {
     public QuestionFragment() {
@@ -29,7 +31,13 @@ public class QuestionFragment extends Fragment {
     }
     FragmentQuestionBinding binding;
 
+    List<QuizQuestions> allQuestionList;
+    QuizQuestions quizQuestions;
+    int index=0;
+
+
     private int count = 0;
+
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -40,7 +48,7 @@ public class QuestionFragment extends Fragment {
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         binding = FragmentQuestionBinding.inflate(inflater, container, false);
 
-        AssetManager assetManager = getContext().getAssets();
+        /*AssetManager assetManager = getContext().getAssets();
         InputStream is = null;
         OutputStream os ;
         String text = "";
@@ -55,7 +63,12 @@ public class QuestionFragment extends Fragment {
         } catch (IOException ex) {
             ex.printStackTrace();
         }
-        binding.textQuestion.setText(text);
+        binding.textQuestion.setText(text);*/
+
+        // Add cau hoi - Nguyen
+        allQuestionList = new ;
+        quizQuestions=listofQ.get(index);
+
 
         binding.buttonTrue.setOnClickListener(new View.OnClickListener() {
             @Override
