@@ -39,7 +39,15 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="4dp"
-        android:textSize="20sp"
-        android:text=" • 20021556@vnu.edu.com" />
+        android:text=" • 20021556@vnu.edu.com"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="4dp"
+        android:text=" • 20020090@vnu.edu.com"
+        android:textSize="20sp" />
 
 </LinearLayout>

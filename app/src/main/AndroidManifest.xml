@@ -14,14 +14,7 @@
         android:theme="@style/Theme.QuizzFinal"
         tools:targetApi="31">
         <activity
-            android:name=".QuizSplashActivity"
-            android:exported="false">
-            <meta-data
-                android:name="android.app.lib_name"
-                android:value="" />
-        </activity>
-        <activity
-            android:name=".QuizQuestions"
+            android:name=".DashBoard"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"

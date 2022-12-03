@@ -25,22 +25,17 @@ import java.io.OutputStream;
 import java.util.ArrayList;
 import java.util.List;
 
-public class QuestionFragment extends Fragment {
+public class QuestionFragment extends Fragment{
     public QuestionFragment() {
         super(R.layout.fragment_question);
     }
     FragmentQuestionBinding binding;
-
-    List<QuizQuestions> allQuestionList;
-    QuizQuestions quizQuestions;
-    int index=0;
-
-
     private int count = 0;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
     }
 
     @Nullable
@@ -66,8 +61,7 @@ public class QuestionFragment extends Fragment {
         binding.textQuestion.setText(text);*/
 
         // Add cau hoi - Nguyen
-        allQuestionList = new ;
-        quizQuestions=listofQ.get(index);
+
 
 
         binding.buttonTrue.setOnClickListener(new View.OnClickListener() {
