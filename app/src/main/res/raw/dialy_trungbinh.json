@@ -1,0 +1,32 @@
+[
+  {
+    "question": "Gen của thực vật có cấu trúc phân mảnh",
+    "answer_1": "Đúng",
+    "answer_2": "Sai",
+    "correct":  "Đúng"
+  },
+  {
+    "question": "Mã di truyền AUG và UGG không có tính thoái hóa",
+    "answer_1": "Đúng",
+    "answer_2": "Sai",
+    "correct":  "Đúng"
+  },
+  {
+    "question": "Mã di truyền đặc trưng cho từng loài",
+    "answer_1": "Đúng",
+    "answer_2": "Sai",
+    "correct":  "Sai"
+  },
+  {
+    "question": "ó 64 bộ ba đều mã hóa cho các axit amin",
+    "answer_1": "Đúng",
+    "answer_2": "Sai",
+    "correct":  "Đúng"
+  },
+  {
+    "question": "Trong số 64 mã bộ ba, có 37 mã bộ ba có chứa nucleotit loại Adenin",
+    "answer_1": " Đúng",
+    "answer_2": "Sai",
+    "correct": "Sai"
+  }
+]

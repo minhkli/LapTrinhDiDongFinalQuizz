@@ -1,0 +1,32 @@
+[
+  {
+    "question": "Crom là kim loại có độ cứng lớn nhất ",
+    "answer_1": "Đúng",
+    "answer_2": "Sai",
+    "correct":  "Đúng"
+  },
+  {
+    "question": "Oxi nhẹ hơn không khí ",
+    "answer_1": "Đúng",
+    "answer_2": "Sai",
+    "correct":  "Sai"
+  },
+  {
+    "question": "Hai nguyên tố chính tạo nên mặt trời là Hidro và Oxi ",
+    "answer_1": "Đúng",
+    "answer_2": "Sai",
+    "correct":  "Sai"
+  },
+  {
+    "question": "Liên kết giữa các nguyên tử trong phân tử được gọi là liên kết hóa học ",
+    "answer_1": "Đúng",
+    "answer_2": "Sai",
+    "correct":  "Đúng"
+  },
+  {
+    "question": "Sự kết hợp hóa học của silic và oxi được gọi là silica",
+    "answer_1": "Đúng",
+    "answer_2": "Sai",
+    "correct":  "Đúng"
+  }
+]

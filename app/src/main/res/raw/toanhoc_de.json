@@ -1,0 +1,32 @@
+[
+  {
+    "question": "Kính lúp là loại thấu kính lồi ",
+    "answer_1": "Đúng",
+    "answer_2": "Sai",
+    "correct":  "Đúng"
+  },
+  {
+    "question": "1 độ C bằng 33.8 độ K ",
+    "answer_1": "Đúng",
+    "answer_2": "Sai",
+    "correct":  "Sai"
+  },
+  {
+    "question": "Lý thuyết phổ biến nhất diễn tả sự hình thành của vũ trụ là Big Bang ",
+    "answer_1": "Đúng",
+    "answer_2": "Sai",
+    "correct":  "Đúng"
+  },
+  {
+    "question": "Điện thoại di động có cả máy phát và máy thu sóng vô tuyến",
+    "answer_1": "Đúng",
+    "answer_2": "Sai",
+    "correct":  "Đúng"
+  },
+  {
+    "question": "Sóng cơ truyền được trong chân không ",
+    "answer_1": "Đúng",
+    "answer_2": "Sai",
+    "correct":  "Sai"
+  }
+]

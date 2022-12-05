@@ -1,0 +1,32 @@
+[
+  {
+    "question": "The inventor of the telephone was Alexander Graham Bell",
+    "answer_1": "Đúng",
+    "answer_2": "Sai",
+    "correct":  "Đúng"
+  },
+  {
+    "question": "Radius of earth is 6371km",
+    "answer_1": "Đúng",
+    "answer_2": "Sai",
+    "correct":  "Đúng"
+  },
+  {
+    "question": "Solar system has 7 planets, of which Earth is the 5rd planet?",
+    "answer_1": "Đúng",
+    "answer_2": "Sai",
+    "correct":  "Sai"
+  },
+  {
+    "question": "America was the first country to set foot on the moon",
+    "answer_1": "Đúng",
+    "answer_2": "Sai",
+    "correct":  "Đúng"
+  },
+  {
+    "question": "The day of liberation of the South and reunification of Vietnam is April 30, 1975",
+    "answer_1": "Đúng",
+    "answer_2": "Sai",
+    "correct":  "Đúng"
+  }
+]

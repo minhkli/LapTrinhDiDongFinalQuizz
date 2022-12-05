@@ -1,0 +1,32 @@
+[
+  {
+    "question": "Một phân tử ADN “mẹ” tự sao 5 lần liên tiếp thì số phân tử ADN được tạo ra là 32",
+    "answer_1": "Đúng",
+    "answer_2": "Sai",
+    "correct":  "Sai"
+  },
+  {
+    "question": "Nguyên tắc bổ sung trong cấu trúc của ADN dẫn đến kết quả A/T=G/X",
+    "answer_1": "Đúng",
+    "answer_2": "Sai",
+    "correct":  "Sai"
+  },
+  {
+    "question": "Khẳng định A +G = T + X luôn đúng trong trường hợp ADN mạch kép",
+    "answer_1": "Đúng",
+    "answer_2": "Sai",
+    "correct":  "Đúng"
+  },
+  {
+    "question": "Một đoạn của phân tử ADN mang thông tin mã hoá cho một chuỗi pôlipeptit hay một phân tử ARN được gọi là Gen",
+    "answer_1": "Đúng",
+    "answer_2": "Sai",
+    "correct":  "Đúng"
+  },
+  {
+    "question": "Gen là một đoạn ADN mang thông tin di truyền mã hóa cho một sản phẩm xác định là một chuỗi polipeptit hay một phân tử ARN",
+    "answer_1": "Đúng",
+    "answer_2": "Sai",
+    "correct":  "Sai"
+  }
+]

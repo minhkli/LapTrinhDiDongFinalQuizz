@@ -2,6 +2,8 @@ package com.example.quizzfinal;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentTransaction;
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
 import androidx.navigation.fragment.NavHostFragment;
@@ -9,6 +11,7 @@ import androidx.navigation.ui.NavigationUI;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -17,12 +20,18 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.quizzfinal.R;
+import com.example.quizzfinal.databinding.ActivityMainBinding;
+import com.example.quizzfinal.databinding.FragmentPlayBinding;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 import org.jetbrains.annotations.NonNls;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity implements SendDataHome, SendData, SendResult {
     private Button btnFeedback;
+    private PlayFragment playFragment = new PlayFragment();
+    private LevelFragment levelFragment = new LevelFragment();
+    private QuestionFragment questionFragment = new QuestionFragment();
+    private ResultFragment resultFragment = new ResultFragment();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -66,5 +75,35 @@ public class MainActivity extends AppCompatActivity {
                 return true;
         }
         return super.onOptionsItemSelected(item);
+    }
+
+    @Override
+    public void send(String monhoc) {
+        Bundle bundle = new Bundle();
+        bundle.putString("monhoc", monhoc);
+        Log.i("TAG", "send: " + monhoc);
+        levelFragment.setArguments(bundle);
+    }
+
+    @Override
+    public void sendLevel(String cap, String monhoc) {
+        Log.d("log", cap);
+        Bundle bundle = new Bundle();
+        bundle.putString("mess", cap);
+        bundle.putString("monhoc", monhoc);
+        questionFragment.setArguments(bundle);
+    }
+
+    @Override
+    public void sendResultFragment(String result, String question, String monhoc, String cap) {
+        Bundle bundle = new Bundle();
+        bundle.putString("result", result);
+        bundle.putString("question", question);
+        bundle.putString("monhoc", monhoc);
+        bundle.putString("cap", cap);
+
+        Log.d("log", result + " " + question);
+
+        resultFragment.setArguments(bundle);
     }
 }

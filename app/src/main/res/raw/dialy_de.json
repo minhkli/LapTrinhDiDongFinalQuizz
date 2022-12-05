@@ -1,0 +1,32 @@
+[
+  {
+    "question": "Gen là một đoạn của phân tử ADN mang thông tin mã hoá chuỗi polipeptit",
+    "answer_1": "Đúng",
+    "answer_2": "Sai",
+    "correct":  "Đúng"
+  },
+  {
+    "question": "Nuclêôtit tham gia cấu tạo nên ADN không có Uraxin",
+    "answer_1": "Đúng",
+    "answer_2": "Sai",
+    "correct":  "Sai"
+  },
+  {
+    "question": "ADN không được cấu tạo từ các loại A , U ,G , X ",
+    "answer_1": "Đúng",
+    "answer_2": "Sai",
+    "correct":  "Đúng"
+  },
+  {
+    "question": "Timin là nucleotit cấu tạo nên phân tử ADN",
+    "answer_1": "Đúng",
+    "answer_2": "Sai",
+    "correct":  "Đúng"
+  },
+  {
+    "question": " Đoạn chứa thông tin mã hóa axit amin của gen ở tế bào nhân thực gọi là Exon",
+    "answer_1": "Đúng",
+    "answer_2": "Sai",
+    "correct":  "Sai"
+  }
+]
