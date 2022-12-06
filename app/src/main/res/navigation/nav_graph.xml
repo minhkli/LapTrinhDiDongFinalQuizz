@@ -50,4 +50,9 @@
             android:id="@+id/action_resultFragment_to_playFragment"
             app:destination="@id/playFragment" />
     </fragment>
+    <activity
+        android:id="@+id/questionActivity"
+        android:name="com.example.quizzfinal.QuestionActivity"
+        android:label="activity_question"
+        tools:layout="@layout/activity_question" />
 </navigation>
