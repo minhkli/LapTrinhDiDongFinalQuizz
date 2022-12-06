@@ -75,7 +75,7 @@ public class QuestionFragment extends Fragment{
     private void loadQuestion () {
         switch (MainActivity.getTopic()) {
             case "ĐỊA LÝ":
-                if (MainActivity.getLevel().equals("Dễ")) binding.textQuestion.setText(DiaQues.medium_question[count]);
+                if (MainActivity.getLevel().equals("Dễ")) binding.textQuestion.setText(DiaQues.easy_question[count]);
                 else if (MainActivity.getLevel().equals("Trung Bình")) binding.textQuestion.setText(DiaQues.medium_question[count]);
                 else binding.textQuestion.setText(DiaQues.hard_question[count]);
                 break;
@@ -113,28 +113,28 @@ public class QuestionFragment extends Fragment{
                     score++;
                 break;
             case "TOÁN HỌC":
-                if (MainActivity.getLevel().equals("Dễ") && button.getText().equals(ToanQues.easy_correct[count]));
-                score++;
-                if (MainActivity.getLevel().equals("Trung Bình") && button.getText().equals(ToanQues.medium_correct[count]));
-                score++;
-                if (MainActivity.getLevel().equals("Khó") && button.getText().equals(ToanQues.hard_correct[count]));
-                score++;
+                if (MainActivity.getLevel().equals("Dễ") && button.getText().equals(ToanQues.easy_correct[count]))
+                    score++;
+                else if (MainActivity.getLevel().equals("Trung Bình") && button.getText().equals(ToanQues.medium_correct[count]))
+                    score++;
+                else  if (MainActivity.getLevel().equals("Khó") && button.getText().equals(ToanQues.hard_correct[count]))
+                    score++;
                 break;
-            case "HÓA HỌC":
-                if (MainActivity.getLevel().equals("Dễ") && button.getText().equals(HoaQues.easy_correct[count]));
-                score++;
-                if (MainActivity.getLevel().equals("Trung Bình") && button.getText().equals(HoaQues.medium_correct[count]));
-                score++;
-                if (MainActivity.getLevel().equals("Khó") && button.getText().equals(HoaQues.hard_correct[count]));
-                score++;
+            case "HOÁ HỌC":
+                if (MainActivity.getLevel().equals("Dễ") && button.getText().equals(HoaQues.easy_correct[count]))
+                    score++;
+                else if (MainActivity.getLevel().equals("Trung Bình") && button.getText().equals(HoaQues.medium_correct[count]))
+                    score++;
+                else  if (MainActivity.getLevel().equals("Khó") && button.getText().equals(HoaQues.hard_correct[count]))
+                    score++;
                 break;
             case "LỊCH SỬ":
-                if (MainActivity.getLevel().equals("Dễ") && button.getText().equals(LichsuQues.easy_correct[count]));
-                score++;
-                if (MainActivity.getLevel().equals("Trung Bình") && button.getText().equals(LichsuQues.medium_correct[count]));
-                score++;
-                if (MainActivity.getLevel().equals("Khó") && button.getText().equals(LichsuQues.hard_correct[count]));
-                score++;
+                if (MainActivity.getLevel().equals("Dễ") && button.getText().equals(LichsuQues.easy_correct[count]))
+                    score++;
+                else if (MainActivity.getLevel().equals("Trung Bình") && button.getText().equals(LichsuQues.medium_correct[count]))
+                    score++;
+                else  if (MainActivity.getLevel().equals("Khó") && button.getText().equals(LichsuQues.hard_correct[count]))
+                    score++;
                 break;
         }
     }

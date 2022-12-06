@@ -8,35 +8,34 @@
     tools:context=".ResultFragment">
 
     <TextView
-        android:id="@+id/result"
+        android:id="@+id/txtResult"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="112dp"
-        android:gravity="center"
         android:maxLines="2"
-        android:text="Result"
+        android:text="Hoàn thành"
         android:textColor="@color/black"
-        android:textSize="30sp"
+        android:textSize="20sp"
         app:layout_constraintBottom_toTopOf="@+id/complt"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.247" />
+        app:layout_constraintVertical_bias="0.645" />
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/complt"
         android:layout_width="300dp"
         android:layout_height="105dp"
         android:layout_alignParentEnd="true"
-        android:layout_marginBottom="20dp"
+        android:layout_marginBottom="16dp"
         android:backgroundTint="@color/white"
         android:text="Hoàn thành"
         android:textColor="@color/black"
         android:textSize="20sp"
         app:layout_constraintBottom_toTopOf="@+id/share_point"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.675"
+        app:layout_constraintHorizontal_bias="0.585"
         app:layout_constraintStart_toStartOf="parent"
         app:strokeColor="@color/black"
         app:strokeWidth="2dp" />
@@ -46,14 +45,14 @@
         android:layout_width="300dp"
         android:layout_height="105dp"
         android:layout_alignParentEnd="true"
-        android:layout_marginBottom="256dp"
+        android:layout_marginBottom="136dp"
         android:backgroundTint="@color/white"
         android:text="Chia sẻ thành tích"
         android:textColor="@color/black"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.675"
+        app:layout_constraintHorizontal_bias="0.585"
         app:layout_constraintStart_toStartOf="parent"
         app:strokeColor="@color/black"
         app:strokeWidth="2dp" />

@@ -1,10 +1,11 @@
 package com.example.quizzfinal;
 
-import android.content.Context;
 import android.os.Bundle;
 
-import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.AppCompatButton;
 import androidx.fragment.app.Fragment;
+import androidx.lifecycle.ViewModelProvider;
 import androidx.navigation.Navigation;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
@@ -23,7 +24,7 @@ import javax.security.auth.Subject;
 
 public class PlayFragment extends Fragment {
     FragmentPlayBinding binding;
-    SendDataHome sendDataHome;
+    private TeamModelView viewModel;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -33,47 +34,36 @@ public class PlayFragment extends Fragment {
         binding.imgGeo.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                sendDataHome.send("dialy");
+                AppCompatButton button = (AppCompatButton) view;
+                viewModel.setTopic(button.getText().toString());
                 Navigation.findNavController(view).navigate(R.id.action_playFragment_to_levelFragment);
             }
         });
         binding.imgMath.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                sendDataHome.send("toanhoc");
+                AppCompatButton button = (AppCompatButton) view;
+                viewModel.setTopic(button.getText().toString());
                 Navigation.findNavController(view).navigate(R.id.action_playFragment_to_levelFragment);
             }
         });
         binding.imgChem.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                sendDataHome.send("hoahoc");
+                AppCompatButton button = (AppCompatButton) view;
+                viewModel.setTopic(button.getText().toString());
                 Navigation.findNavController(view).navigate(R.id.action_playFragment_to_levelFragment);
             }
         });
         binding.imgHis.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                sendDataHome.send("lichsu");
+                AppCompatButton button = (AppCompatButton) view;
+                viewModel.setTopic(button.getText().toString());
                 Navigation.findNavController(view).navigate(R.id.action_playFragment_to_levelFragment);
             }
         });
+        viewModel = new ViewModelProvider(requireActivity()).get(TeamModelView.class);
         return binding.getRoot();
-    }
-
-    @Override
-    public void onAttach(@NonNull Context context) {
-        super.onAttach(context);
-        if (context instanceof SendDataHome){
-            sendDataHome = (SendDataHome) context;
-        } else {
-            throw new RuntimeException(context.toString());
-        }
-    }
-
-    @Override
-    public void onDetach() {
-        super.onDetach();
-        sendDataHome = null;
     }
 }

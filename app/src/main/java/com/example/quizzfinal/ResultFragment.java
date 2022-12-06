@@ -22,7 +22,7 @@ public class ResultFragment extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         binding = FragmentResultBinding.inflate(inflater, container, false);
-        binding.result.setText(MainActivity.getScore().toString().trim() + " / 5");
+        binding.txtResult.setText(MainActivity.getScore().toString().trim() + " / 5");
         binding.complt.setOnClickListener(view -> {
             Navigation.findNavController(view).navigate(R.id.action_resultFragment_to_playFragment);
         });
