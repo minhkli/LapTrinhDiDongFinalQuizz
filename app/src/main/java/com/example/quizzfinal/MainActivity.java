@@ -2,8 +2,7 @@ package com.example.quizzfinal;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.fragment.app.FragmentManager;
-import androidx.fragment.app.FragmentTransaction;
+import androidx.lifecycle.ViewModelProvider;
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
 import androidx.navigation.fragment.NavHostFragment;
@@ -11,7 +10,6 @@ import androidx.navigation.ui.NavigationUI;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -20,23 +18,42 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.quizzfinal.R;
-import com.example.quizzfinal.databinding.ActivityMainBinding;
-import com.example.quizzfinal.databinding.FragmentPlayBinding;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 import org.jetbrains.annotations.NonNls;
 
-public class MainActivity extends AppCompatActivity implements SendDataHome, SendData, SendResult {
+public class MainActivity extends AppCompatActivity {
     private Button btnFeedback;
-    private PlayFragment playFragment = new PlayFragment();
-    private LevelFragment levelFragment = new LevelFragment();
-    private QuestionFragment questionFragment = new QuestionFragment();
-    private ResultFragment resultFragment = new ResultFragment();
+    private TeamModelView viewModel;
+    private static String topic;
+    private static String level;
+    private static Integer score;
 
+    public static String getTopic() {
+        return topic;
+    }
+
+    public static String getLevel() {
+        return level;
+    }
+    public static Integer getScore() {
+        return score;
+    }
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        viewModel = new ViewModelProvider(this).get(TeamModelView.class);
+
+        viewModel.getTopic().observe(this, item -> {
+            setTopic(item);
+        });
+        viewModel.getLevel().observe(this, item -> {
+            setLevel(item);
+        });
+        viewModel.getScore().observe(this, item -> {
+            setScore(item);
+        });
 
         //Truy cap vao Fragment Container View
         NavHostFragment navHostFragment = (NavHostFragment) getSupportFragmentManager().findFragmentById(R.id.nav_host_fragment);
@@ -77,33 +94,14 @@ public class MainActivity extends AppCompatActivity implements SendDataHome, Sen
         return super.onOptionsItemSelected(item);
     }
 
-    @Override
-    public void send(String monhoc) {
-        Bundle bundle = new Bundle();
-        bundle.putString("monhoc", monhoc);
-        Log.i("TAG", "send: " + monhoc);
-        levelFragment.setArguments(bundle);
+    public void setLevel(String level) {
+        this.level = level;
     }
 
-    @Override
-    public void sendLevel(String cap, String monhoc) {
-        Log.d("log", cap);
-        Bundle bundle = new Bundle();
-        bundle.putString("mess", cap);
-        bundle.putString("monhoc", monhoc);
-        questionFragment.setArguments(bundle);
+    public void setTopic(String topic) {
+        this.topic = topic;
     }
 
-    @Override
-    public void sendResultFragment(String result, String question, String monhoc, String cap) {
-        Bundle bundle = new Bundle();
-        bundle.putString("result", result);
-        bundle.putString("question", question);
-        bundle.putString("monhoc", monhoc);
-        bundle.putString("cap", cap);
-
-        Log.d("log", result + " " + question);
-
-        resultFragment.setArguments(bundle);
-    }
+    public void setScore(Integer score) { this.score = score;}
+    // cai score nay no k dc reset nen no count toi chet
 }
